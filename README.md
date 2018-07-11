@@ -14,7 +14,7 @@ npm run webdriver-update
 
 ### Start WebDriver Manager (in 1 terminal window)
 
-            ```
+     npm run webdriver       ```
 
 ```
 

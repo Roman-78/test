@@ -22,7 +22,7 @@ Then Result "h2" is equal to "1"
     And User selects "[value='MODULO']" from dropdown "select"
     And User enters 10 in field "[ng-model='second']"
     And User clicks Go Button "#gobutton"
-    Then Result "h2" is equal to "7"
+    Then Result "h2" is equal to "2"
   Scenario: 4: Verify calculator
     When User enters 64 in field "[ng-model='first']"
     And User selects "[value='MULTIPLICATION']" from dropdown "select"
@@ -35,5 +35,9 @@ Then Result "h2" is equal to "1"
     And User enters 654 in field "[ng-model='second']"
     And User clicks Go Button "#gobutton"
     Then Result "h2" is equal to "111"
-
-
+  Scenario: 6: Verify calculator
+    When User enters 87 in field "[ng-model='first']"
+    And User selects "[value='ADDITION']" from dropdown "select"
+    And User enters 9 in field "[ng-model='second']"
+    And User clicks Go Button "#gobutton"
+    Then Result "h2" is equal to "96"

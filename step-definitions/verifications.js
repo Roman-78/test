@@ -13,6 +13,7 @@ Then('History {string} is equal to {int}', (locator, result) => {
 });
 
 Then('Result {string} is equal to {string}', (locator, result) => {
+    browser.sleep(2000)
     return element(by.css(locator)).getText().then(function (text) {
         return expect(text).to.equal(result);
     });
