@@ -18,7 +18,10 @@ exports.config =  {
 
     cucumberOpts: {
         require: ['step-definitions/*.js','support/hooks.js'],
-        keepAlive:false,
+        keepAlive: false,
+        format: ['json:reports/json/results.json', 'progress'],
+        strict: true,
+
     },
 
     onComplete: function () {
